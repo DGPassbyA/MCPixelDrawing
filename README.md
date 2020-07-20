@@ -32,7 +32,7 @@ jdk1.8.0_231
 
    `java -jar 待转换图片路径 图片转换比例 生成方向(x或z) 输出文件路径`
 
-   比如`java -jar ./1.jpg 0.1 x ./test.mcfunction`就是把MCPixelDrawing-jar文件夹中名为1.jpg的文件按宽高比例缩小到原来的10%后，以自己为原点，x和y轴所在平面生成像素画，并保存到文件夹下名为test.mcfunction的文件
+   比如`java -jar MCPixelDrawing.jar ./1.jpg 0.1 x ./test.mcfunction`就是把MCPixelDrawing-jar文件夹中名为1.jpg的文件按宽高比例缩小到原来的10%后，以自己为原点，x和y轴所在平面生成像素画，并保存到文件夹下名为test.mcfunction的文件
 
 3. 把生成的mcfunction文件复制到`.minecraft\saves\worldname\datapacks\namespace\data\custom\functions\example`目录下（worldname是一个存档的名字，如果没有某一级文件夹就新建）
 4. 进入游戏，运行指令`/function custom:example/test`，卡一下就自动生成了

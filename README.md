@@ -38,7 +38,7 @@ jdk1.8.0_231
 
 3. 把生成的mcfunction文件复制到`.minecraft\saves\worldname\datapacks\namespace\data\custom\functions\example`目录下（worldname是一个存档的名字，如果没有某一级文件夹就新建）
 
-4. ``.minecraft\saves\worldname\datapacks\namespace\`目录下新建一个名为`pack.txt`的文本，然后内容如下：
+4. `.minecraft\saves\worldname\datapacks\namespace\`目录下新建一个名为`pack.txt`的文本，然后内容如下：
 
    ```txt
    {

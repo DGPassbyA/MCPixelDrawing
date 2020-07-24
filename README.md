@@ -26,7 +26,9 @@ jdk1.8.0_231
 
 ### 用法/Usage
 
-1. 下载整个MCPixelDrawing-jar文件夹（必须包含gson-2.8.6.jar，MCPixelDrawing.jar，mc_block_list.json）
+1. 下载MCPixelDrawing-jar.7z并解压到MCPixelDrawing-jar文件夹
+
+   （正常的话会包含gson-2.8.6.jar，MCPixelDrawing.jar，mc_block_list.json）
 
 2. MCPixelDrawing-jar文件夹中运行命令行指令
 
@@ -35,7 +37,21 @@ jdk1.8.0_231
    比如`java -jar MCPixelDrawing.jar ./1.jpg 0.1 x ./test.mcfunction`就是把MCPixelDrawing-jar文件夹中名为1.jpg的文件按宽高比例缩小到原来的10%后，以自己为原点，x和y轴所在平面生成像素画，并保存到文件夹下名为test.mcfunction的文件
 
 3. 把生成的mcfunction文件复制到`.minecraft\saves\worldname\datapacks\namespace\data\custom\functions\example`目录下（worldname是一个存档的名字，如果没有某一级文件夹就新建）
-4. 进入游戏，运行指令`/function custom:example/test`，卡一下就自动生成了
+
+4. ``.minecraft\saves\worldname\datapacks\namespace\`目录下新建一个名为`pack.txt`的文本，然后内容如下：
+
+   ```txt
+   {
+     "pack":{
+       "pack_format": 1,
+       "description": "a description for the datapack"
+     }
+   }
+   ```
+
+   修改完保存后**重新命名**`pack.txt`为`pack.mcmeta`（！第四步很重要，不然会无法识别mcfunction文件！）
+
+5. 进入游戏，运行指令`/function custom:example/test`，卡一下就自动生成了
 
 ### 注意事项
 

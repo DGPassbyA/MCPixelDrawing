@@ -37,9 +37,9 @@
     },
     {
         "blockName" : "minecraft:light_blue_wool",
-        "R" : 126,
-        "G" : 153,
-        "B" : 208
+        "R" : 60,
+        "G" : 185,
+        "B" : 222
     },
     {
         "blockName" : "minecraft:light_gray_wool",
